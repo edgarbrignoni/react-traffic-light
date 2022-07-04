@@ -10,6 +10,8 @@ import { TrafficLight } from './components/TrafficLight.jsx';
 
 // render your react application
 ReactDOM.render(
-    <TrafficLight />, 
+    <React.StrictMode>
+        <TrafficLight />
+    </React.StrictMode>,
     document.querySelector('#app')
 );

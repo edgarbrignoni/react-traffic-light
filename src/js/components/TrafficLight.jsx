@@ -1,12 +1,12 @@
 import React from 'react';
 
 export class TrafficLight extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			theValue: null
-		};
-	}
+    constructor() {
+        super();
+        this.state = {
+            theValue: null
+        };
+    }
 
     render() {
         // console.log(this.state);
@@ -26,11 +26,20 @@ export class TrafficLight extends React.Component {
 
         return (
             <div>
-                <div id="trafficTop" onClick={() => this.setState({theValue: 'reset'})}/>
+                <div id="trafficTop" onClick={() => this.setState({ theValue: 'reset' })} />
                 <div id="container">
-                    <div className={'red light ' + redSelected} onClick={() => this.setState({theValue: 'red'})} />
-                    <div className={'yellow light ' + yellowSelected} onClick={() => this.setState({theValue: 'yellow'})} />
-                    <div className={'green light ' + greenSelected} onClick={() => this.setState({theValue: 'green'})} />
+                    <div
+                        className={'red light ' + redSelected}
+                        onClick={() => this.setState({ theValue: 'red' })}
+                    />
+                    <div
+                        className={'yellow light ' + yellowSelected}
+                        onClick={() => this.setState({ theValue: 'yellow' })}
+                    />
+                    <div
+                        className={'green light ' + greenSelected}
+                        onClick={() => this.setState({ theValue: 'green' })}
+                    />
                 </div>
             </div>
         );
